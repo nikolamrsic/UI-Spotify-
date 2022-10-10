@@ -1,0 +1,60 @@
+.song-cover > button {
+    visibility: hidden;
+  }
+  
+  .main-content > section {
+    opacity: 50%;
+  }
+  
+  .song-section:last-child {
+    padding-bottom: 90px;
+  }
+  
+  .song-cover > button:hover {
+    scale: 1.1;
+    transition: 0.3s linear;
+  }
+  .song-cover:hover > img {
+  }
+  .song-cover:hover > button {
+    animation: fade-in 0.3s ease;
+    visibility: visible;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      transform: translateY(50px) scale(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px) scale(100%);
+      opacity: 1;
+    }
+  }
+  @media (max-width: 900px) {
+    .song-section > div > article:nth-last-child(-n + 4) {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .song-section > div > article:nth-last-child(-n + 2) {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .song-section > div > article:nth-last-child(-n + 1) {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .song-section > div > article:nth-last-child(-n + 1) {
+      display: block;
+    }
+  }
+  
+  .avatar-button:focus-within>.avatar-menu{
+  
+  }
